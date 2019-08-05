@@ -67,7 +67,7 @@ class TapTest {
 }
 
 function formatError (diag){
-    if (diag) return {
+    if (diag && diag.data) return {
         'name':"",
         'message':"",
         "showDiff": true,
